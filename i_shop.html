@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shop</title>
+    <script src="i_shop.js"></script>
+    <script>
+        window.addEventListener('DOMContentLoaded', (event) => basket.init());
+    </script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-size: large; font-family: sans-serif; }
+
+        .goods { width: 50%; margin: 10px; }
+
+        .item_box { margin-bottom: 10px; padding: 5px 5px 25px 5px; background-color: #F1F1F1FF; }
+
+        .add_item { background-color: #909394FF; color: white; float: right; }
+
+        button { margin: 10px; }
+
+        .basket {display: flex; width: 50%; flex-wrap: wrap; background:#F1F1F1FF; border: 0.5px solid; margin: 10px;}
+
+        .title { width: 100%; padding: 5px 5px 5px 5px; }
+
+        .big { border: 0.5px solid; width: 60%; padding-left: 5px; }
+
+        .small { border: 0.5px solid;  width: 20%; padding-right: 5px; text-align: right; }
+
+    </style>
+</head>
+<body>
+    <div class="goods">
+    </div>
+    <p><br><button id="clear_basket" onclick="basket.clearBasket()">Очистить корзину</button><br></p>
+    <div class='basket'>
+    </div>
+</body>
+</html>
