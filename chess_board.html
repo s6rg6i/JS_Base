@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="chess_board.js"></script>
+    <link rel="stylesheet" href="chess_board.css">
+    <title>Homework 5</title>
+    <style>
+        .chess { height:540px; width: 540px; }
+        .square { height: 60px; width: 60px; float: left; display: flex; align-items: center; justify-content: center;}
+        .field { background-color: white; font-size: 24px; }
+        .white { background-color: #d9af78; }
+        .black { background-color: #9a8168; }
+    </style>
+    <script>
+        window.addEventListener('DOMContentLoaded', (event) => chessBoard.drawChessBoard());
+    </script>
+</head>
+<body>
+<h3>Задание 5.1. Создать функцию, генерирующую шахматную доску.</h3>
+<div class="chess"></div>
+
+</body>
+</html>
